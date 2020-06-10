@@ -19,3 +19,5 @@ Run the test
 ````
 npm run android.app
 ````
+
+![qabify-demo-app-android](./qabify.gif)
