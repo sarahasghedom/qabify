@@ -1,15 +1,12 @@
 {
-  "name": "webdriverio-appium-cucumber-boilerplate",
+  "name": "webdriverio-appium",
   "license": "MIT",
   "scripts": {
     "android.app": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarahasghedom/qabify.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sarahasghedom/qabify/issues"
+    "url": "git+https://github.com/sarahasghedom/webdriverio-appium.git"
   },
   "dependencies": {
     "@babel/cli": "^7.7.0",
