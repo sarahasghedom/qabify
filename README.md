@@ -13,7 +13,9 @@ Install the dependencies.
 ```
 npm install
 ```
-You will also need to install appium(http://appium.io/docs/en/about-appium/getting-started/). Also install android studio(https://developer.android.com/studio/install) and make sure to setup an emulator. You can specify the name of the emulator in the ```wdio.android.app.conf.js``` file
+You will also need to install appium(http://appium.io/docs/en/about-appium/getting-started/). 
+Also install android studio(https://developer.android.com/studio/install) and make sure to setup an emulator. 
+You can specify the name of the emulator in the ```wdio.conf.js``` file
 
 Run the test
 ````
