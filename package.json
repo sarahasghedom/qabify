@@ -1,6 +1,5 @@
 {
   "name": "webdriverio-appium",
-  "license": "MIT",
   "scripts": {
     "android.app": "./node_modules/.bin/wdio wdio.conf.js"
   },
