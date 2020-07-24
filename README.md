@@ -3,6 +3,7 @@
 
 - Install Java JDK(https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
 - Install Node.js & NPM (https://nodejs.org/en/)
+- Install Git (https://git-scm.com/download/win)
 - Install Visual Studio Code(https://code.visualstudio.com/)
 - Install appium(http://appium.io/docs/en/about-appium/getting-started/). 
 - Install android studio(https://developer.android.com/studio/install) and make sure to setup an emulator.
