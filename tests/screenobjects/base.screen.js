@@ -1,24 +1,28 @@
-import NativeAlert from '../helpers/nativeAlert';
-
 const selectors = {
-    text: '//android.widget.TextView',
-    textField: '//android.widget.EditText',
+    text: '//android.widget.TextView'
 };
 
 class BaseScreen {
-    get displayedText() { return $(selectors.text);}
-    get allDisplayedText() { return $$(selectors.text);}
+    get text() { return $$(selectors.text);}
 
-    checkText(text){
-        for(let i = 0; i < this.allDisplayedText.length; i++){
-            if(this.allDisplayedText[i].getText().toLowerCase().indexOf(text)) {
+    //function to open the app
+    open(){
+        driver.launchApp();
+    }
+
+    //function to close the app
+    close() {
+        driver.closeApp();
+    }
+
+    //function that finds text on page and asserts the text
+    findTitle(title){
+        for(let i = 0; i < this.text.length; i++){
+            if(this.text[i].getText().toLowerCase() === title) {
+                expect(this.text[i].getText().toLowerCase()).to.contains(title);
                 break;
             }
         }
-    }
-
-    get alert () {
-        return NativeAlert;
     }
 }
 

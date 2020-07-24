@@ -2,7 +2,7 @@
   "name": "webdriverio-appium-cucumber-boilerplate",
   "license": "MIT",
   "scripts": {
-    "android.app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js"
+    "android.app": "./node_modules/.bin/wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",

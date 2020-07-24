@@ -4,8 +4,8 @@
 Clone the project, run one of the following commands
 
 ```
-git clone git@github.com:sarahasghedom/qabify.git #SSH
-git clone https://github.com/sarahasghedom/qabify.git #HTTPS
+git clone git@github.com:sarahasghedom/webdriverio-appium.git #SSH
+git clone https://github.com/sarahasghedom/webdriverio-appium.git #HTTPS
 ```
 
 Install the dependencies.
@@ -19,5 +19,3 @@ Run the test
 ````
 npm run android.app
 ````
-
-![qabify-demo-app-android](./qabify.gif)

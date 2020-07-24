@@ -1,8 +1,8 @@
-let SCREEN_SIZE;
+let screen_size;
 /**
  * The values in the below object are percentages of the screen
  */
-const SWIPE_DIRECTION = {
+const swipe_direction = {
     down: {
         start: { x: 50, y: 15 },
         end: { x: 50, y: 85 },
@@ -55,8 +55,8 @@ class Gestures {
      */
     static swipeDown(percentage = 1) {
         this.swipeOnPercentage(
-            this._calculateXY(SWIPE_DIRECTION.down.start, percentage),
-            this._calculateXY(SWIPE_DIRECTION.down.end, percentage),
+            this._calculateXY(swipe_direction.down.start, percentage),
+            this._calculateXY(swipe_direction.down.end, percentage),
         );
     }
 
@@ -67,8 +67,8 @@ class Gestures {
      */
     static swipeUp(percentage = 1) {
         this.swipeOnPercentage(
-            this._calculateXY(SWIPE_DIRECTION.up.start, percentage),
-            this._calculateXY(SWIPE_DIRECTION.up.end, percentage),
+            this._calculateXY(swipe_direction.up.start, percentage),
+            this._calculateXY(swipe_direction.up.end, percentage),
         );
     }
 
@@ -79,8 +79,8 @@ class Gestures {
      */
     static swipeLeft(percentage = 1) {
         this.swipeOnPercentage(
-            this._calculateXY(SWIPE_DIRECTION.left.start, percentage),
-            this._calculateXY(SWIPE_DIRECTION.left.end, percentage),
+            this._calculateXY(swipe_direction.left.start, percentage),
+            this._calculateXY(swipe_direction.left.end, percentage),
         );
     }
 
@@ -91,8 +91,8 @@ class Gestures {
      */
     static swipeRight(percentage = 1) {
         this.swipeOnPercentage(
-            this._calculateXY(SWIPE_DIRECTION.right.start, percentage),
-            this._calculateXY(SWIPE_DIRECTION.right.end, percentage),
+            this._calculateXY(swipe_direction.right.start, percentage),
+            this._calculateXY(swipe_direction.right.end, percentage),
         );
     }
 
@@ -111,13 +111,13 @@ class Gestures {
      * </pre>
      */
     static swipeOnPercentage(from, to) {
-        SCREEN_SIZE = SCREEN_SIZE || driver.getWindowRect();
+        screen_size = screen_size || driver.getWindowRect();
         const pressOptions = this._getDeviceScreenCoordinates(
-            SCREEN_SIZE,
+            screen_size,
             from,
         );
         const moveToScreenCoordinates = this._getDeviceScreenCoordinates(
-            SCREEN_SIZE,
+            screen_size,
             to,
         );
         this.swipe(pressOptions, moveToScreenCoordinates);
